@@ -2,8 +2,8 @@
 
 const Message = () => {
   return (
-    <div className="min-h-[60vh] bg-white lg:py-10 lg:px-6">
-      <div className="max-w-[900px] pb-4 text-center items-center mx-auto">
+    <div className=" bg-white lg:py-10 sm:px-8 lg:px-6">
+      <div className="max-w-[900px] pb-10 text-center items-center mx-auto">
         <div className="p-5">
           <h1 className="text-4xl text-black font-bold">Messaging for all</h1>
         </div>

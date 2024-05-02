@@ -2,8 +2,8 @@
 
 const Faq = () => {
   return (
-    <section className="bg-white ">
-      <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+    <section className="bg-white sm:px-8 ">
+      <div className="py-8 px-10 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
         <div className="mx-auto  mb-8 max-w-[130vh] text-center lg:mb-16">
           <h2 className="mb-4 text-4xl tracking-tight font-bold text-black ">
             Frequently Asked Questions

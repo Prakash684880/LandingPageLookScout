@@ -2,15 +2,19 @@ import { useState } from "react";
 import { IoMdClose, IoMdMenu } from "react-icons/io";
 import logo from "../assets/Logo_vector.png";
 
+import { Link } from "react-router-dom";
+
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="shadow-md w-full fixed top-0 left-0 px-4">
-      <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
-        <div className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] w-60 text-gray-800">
-          <img src={logo} alt="logo_img" height={30} width={30} />
-          LOOKSCOUT
+    <div className="shadow-md w-full px-4">
+      <div className="md:flex items-center bg-white py-4 md:px-8 px-7">
+        <div className="font-bold text-2xl cursor-pointer font-[Poppins] w-60 p-2">
+          <Link to={'/'} className="flex items-center text-black ">
+            <img src={logo} alt="logo_img" height={30} width={30} />
+            <h1 className="md:text-xl font-extrabold">LOOKSCOUT</h1>
+          </Link>
         </div>
 
         {/* Menu Button (only visible on mobile) */}
@@ -23,39 +27,39 @@ const NavBar = () => {
 
         {/* Navigation Links and Buttons */}
         <div
-          className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static justify-between gap-4 bg-white md:z-auto z-[-1] left-0 w-full pl-9 transition-all duration-500 ease-in ${
+          className={`md:text-sm md:flex md:items-center md:pb-0 pb-12 absolute md:static justify-between gap-4 bg-white md:z-auto z-[-1] left-0 w-full md:gap-2 transition-all duration-500 ease-in ${
             menuOpen ? "top-20" : "top-[-490px]"
           }`}
         >
           <div
             className={`flex ${
               menuOpen ? "flex-col" : "" // Apply flex-col when menuOpen is true
-            } justify-between gap-4 md:ml-4 font-bold text-lg md:text-sm my-2 md:my-0`}
+            } justify-between gap-4 md:gap-3 font-bold text-lg md:text-sm my-2 md:my-0`}
           >
-            <a
-              href="#"
+            <Link
+              to="/"
               className="text-gray-800 hover:text-gray-400 duration-500"
             >
               Home
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="our-products"
               className="text-gray-800 hover:text-gray-400 duration-500"
             >
               Our Products
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/services"
               className="text-gray-800 hover:text-gray-400 duration-500"
             >
               Services
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/contact-us"
               className="text-gray-800 hover:text-gray-400 duration-500"
             >
               Contacts
-            </a>
+            </Link>
           </div>
 
           {/* Buttons (Sign Up and Log In) */}

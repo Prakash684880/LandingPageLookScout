@@ -1,9 +1,10 @@
 
+import { Link } from "react-router-dom";
 import workimg from "../assets/work.jpg"; // Import your image file
 
 const DemonstrateCard = () => {
   return (
-    <div className="min-h-[75vh] bg-white">
+    <div className=" bg-white sm:px-8">
       <div className="flex flex-col lg:flex-row h-full lg:px-7">
         {/* Left Column */}
         <div className="lg:w-1/2 bg-white text-black flex justify-center items-center">
@@ -50,16 +51,16 @@ const DemonstrateCard = () => {
           <div className="absolute h-[250px] bottom-12 left-10 right-10 bg-white bg-opacity-70  text-black p-4 ">
             {/* Content at the bottom of the image */}
             <div className="relative">
-              <h2 className="text-2xl text-center font-semibold">
+              <h2 className="text-2xl pt-5 text-center font-semibold">
                 Check Us Out
               </h2>
               <div className="absolute top-40 text-center justify-center items-center left-10 right-10">
-                <a
-                  href="#"
+                <Link
+                  to="/contact-us"
                   className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-medium py-3 px-12 rounded-lg transition duration-300"
                 >
                   Get Started Now
-                </a>
+                </Link>
               </div>
             </div>
           </div>

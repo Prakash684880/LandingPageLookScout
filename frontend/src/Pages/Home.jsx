@@ -9,7 +9,7 @@ import WelcomeBanner from "../Component/WelcomeBanner";
 
 const Home = () => {
   return (
-    <div className="bg-white pt-20 w-full h-full">
+    <div className="bg-white">
       <Hero />
       <Message />
       <DemonstrateCard/>

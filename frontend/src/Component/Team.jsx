@@ -4,7 +4,7 @@ import team4img from '../assets/team4.jpg'
 
 const Team = () => {
   return (
-    <section className="bg-white ">
+    <section className="bg-white sm:px-8 ">
       <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
         <div className="mx-auto mb-8 max-w-[130vh] text-center lg:mb-16">
           <h2 className="mb-4 text-4xl tracking-tight font-bold text-black ">
@@ -286,10 +286,6 @@ const Team = () => {
               </li>
             </ul>
           </div>
-
-
-
-
         </div>
       </div>
     </section>
