@@ -10,7 +10,7 @@ const WelcomeBanner = () => {
         <div className="max-w-[740px]">
           <div className="py-8">
             <h1 className="text-md p-4 font-bold">1% OF THE INDUSTRY</h1>
-            <span className="text-4xl py-4 font-bold">
+            <span className="text-2xl py-4 md:text-4xl px-2 font-bold">
               Welcome to your new digital reality that which will rock your
               world truly at all.
             </span>
@@ -37,42 +37,42 @@ const WelcomeBanner = () => {
           <li>
             <a
               href="#"
-              className="text-[#39569c] hover:text-gray-900 dark:hover:text-white"
+              className="text-[#39569c] hover:text-gray-900 dark:hover:text-white logo-link"
             >
               <img
                 src={twilioimg}
                 alt="twilioimg"
                 height={50}
                 width={200}
-                className="inverted-image"
+                className="inverted-image logo-image"
               />
             </a>
           </li>
           <li>
             <a
               href="#"
-              className="text-[#00acee] hover:text-gray-900 dark:hover:text-white"
+              className="text-[#00acee] hover:text-gray-900 dark:hover:text-white logo-link"
             >
               <img
                 src={slackimg}
                 height={50}
                 width={200}
                 alt="slackimg"
-                className="inverted-image"
+                className="inverted-image logo-image"
               />
             </a>
           </li>
           <li>
             <a
               href="#"
-              className="text-gray-900 hover:text-gray-950 dark:hover:text-white dark:text-gray-500"
+              className="text-gray-900 hover:text-gray-950 dark:hover:text-white dark:text-gray-500 logo-link"
             >
               <img
                 src={paypalimg}
                 height={100}
                 width={200}
                 alt="paypalimg"
-                className="inverted-image"
+                className="inverted-image logo-image"
               />
             </a>
           </li>
@@ -80,14 +80,14 @@ const WelcomeBanner = () => {
           <li>
             <a
               href="#"
-              className="text-[#ea4c89] hover:text-gray-900 dark:hover:text-white"
+              className="text-[#ea4c89] hover:text-gray-900 dark:hover:text-white logo-link"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 272 92"
                 height={40}
                 width={150}
-                className="inverted-image"
+                className="inverted-image logo-image"
               >
                 <path
                   fill="#EA4335"
@@ -117,7 +117,7 @@ const WelcomeBanner = () => {
           <li className="bg-blue-500">
             <a
               href="#"
-              className="text-white flex justify-center items-center  hover:text-gray-950 dark:hover:text-white dark:text-gray-500"
+              className="text-white flex justify-center items-center logo-link  hover:text-gray-950 dark:hover:text-white dark:text-gray-500"
             >
               <svg
                 width={50}
@@ -126,6 +126,7 @@ const WelcomeBanner = () => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)"
+                className='inverted-image logo-image'
               >
                 <g id="SVGRepo_bgCarrier" strokeWidth="0" />
 
@@ -169,20 +170,20 @@ const WelcomeBanner = () => {
                   />{" "}
                 </g>
               </svg>
-              <span className="text-white font-extrabold">MailChimp</span>
+              <span className="text-white font-extrabold hover:text-red-400">MailChimp</span>
             </a>
           </li>
 
           <li>
             <a
               href="#"
-              className="text-gray-900 hover:text-gray-950 dark:hover:text-white dark:text-gray-500"
+              className="text-gray-900 hover:text-gray-950 logo-link dark:hover:text-white dark:text-gray-500"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width={150}
                 height={60}
-                className="inverted-image"
+                className="inverted-image logo-image"
               >
                 <path
                   d="M60.12 3.684a14.527 14.527 0 0 0-5.239 28.102c-.12-1.19-.238-2.858 0-4.168l1.667-7.264a5.239 5.239 0 0 1-.476-2.143c0-2.024 1.19-3.572 2.62-3.572s1.786.953 1.786 2.024-.834 3.096-1.19 4.882.714 2.62 2.143 2.62 4.525-2.74 4.525-6.668-2.5-5.954-6.073-5.954-6.43 3.215-6.43 6.43c0 1.19.476 2.62 1.072 3.334a.476.476 0 0 1 .119.357l-.357 1.667c-.12.238-.238.357-.476.238-1.786-.834-2.977-3.453-2.977-5.597 0-4.525 3.334-8.812 9.645-8.812s8.93 3.572 8.93 8.335-3.215 9.05-7.502 9.05c-1.43 0-2.858-.714-3.334-1.667l-.953 3.453c-.357 1.3-1.19 2.858-1.786 3.8A14.527 14.527 0 1 0 60.12 3.684z"

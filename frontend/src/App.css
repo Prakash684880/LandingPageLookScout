@@ -1,12 +1,17 @@
-#root {
+/* #root {
     background-color: white;
-    /* or any other color you prefer */
-}
-/* index.css or App.css */
+   
+} */
+
 body,
 html {
     background-color: white;
    
+}
+:root,
+[data-theme] {
+    background-color: none;
+    color: white;
 }
 
 .img-equal {
@@ -32,4 +37,20 @@ html {
 .inverted:hover {
     filter: none;
 
+}
+
+.inverted-blue {
+     filter: invert(53%) sepia(51%) saturate(2819%) hue-rotate(158deg) brightness(90%) contrast(101%);
+}
+
+.logo-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-image {
+    max-width: 100%;
+    height: auto;
+    /* Optional styles for logo images */
 }

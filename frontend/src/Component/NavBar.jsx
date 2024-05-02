@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IoMdClose, IoMdMenu } from "react-icons/io";
 import logo from "../assets/Logo_vector.png";
 
@@ -7,28 +7,48 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+
+  const handleResize = () => {
+ 
+    if (window.innerWidth >= 768) {
+     
+      setMenuOpen(false);
+    }
+  };
+ 
+  useEffect(() => {
+   
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+  
+
   return (
     <div className="shadow-md w-full px-4">
       <div className="md:flex items-center bg-white py-4 md:px-8 px-7">
         <div className="font-bold text-2xl cursor-pointer font-[Poppins] w-60 p-2">
-          <Link to={'/'} className="flex items-center text-black ">
+          <Link to={"/"} className="flex items-center text-black ">
             <img src={logo} alt="logo_img" height={30} width={30} />
-            <h1 className="md:text-xl font-extrabold">LOOKSCOUT</h1>
+            <h1 className="md:text-xl font-extrabold hover:text-gray-500">
+              LOOKSCOUT
+            </h1>
           </Link>
         </div>
 
         {/* Menu Button (only visible on mobile) */}
         <div
           onClick={() => setMenuOpen(!menuOpen)}
-          className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
+          className="text-3xl absolute right-8 top-6 bg-black cursor-pointer md:hidden"
         >
           {menuOpen ? <IoMdClose /> : <IoMdMenu />}
         </div>
 
-        {/* Navigation Links and Buttons */}
+        {/* Navigation Links and Buttons*/}
         <div
-          className={`md:text-sm md:flex md:items-center md:pb-0 pb-12 absolute md:static justify-between gap-4 bg-white md:z-auto z-[-1] left-0 w-full md:gap-2 transition-all duration-500 ease-in ${
-            menuOpen ? "top-20" : "top-[-490px]"
+          className={`md:text-sm md:flex md:items-center md:pb-0  md:static justify-between gap-4 bg-white md:z-auto z-[-1] left-0 w-full md:gap-2 transition-all duration-500 ease-in ${
+            menuOpen ? "block" : "hidden"
           }`}
         >
           <div
@@ -43,13 +63,13 @@ const NavBar = () => {
               Home
             </Link>
             <Link
-              to="our-products"
+              to="/"
               className="text-gray-800 hover:text-gray-400 duration-500"
             >
               Our Products
             </Link>
             <Link
-              to="/services"
+              to="/"
               className="text-gray-800 hover:text-gray-400 duration-500"
             >
               Services
