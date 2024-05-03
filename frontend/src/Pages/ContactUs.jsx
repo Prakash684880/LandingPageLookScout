@@ -31,13 +31,16 @@ const handleOnChange = (e) => {
      console.log("Form data:", data);
 
     try {
-      const response = await fetch(`http://localhost:8000/api/contact`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
+      const response = await fetch(
+        `https://lookscout-backend-six.vercel.app/api/contact`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        }
+      );
 
       const responseData = await response.json();
 
