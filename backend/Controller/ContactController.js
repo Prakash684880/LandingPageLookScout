@@ -10,10 +10,6 @@ async function ContactController(req, res) {
 
     await sendReceivedMail(firstName, email, savedContact._id);
 
-    res.send(
-      console.log("welcome to contact server")
-    )
-
     res.status(201).json({
       success: true,
       message: "Successfully added contact and sent verification email",
