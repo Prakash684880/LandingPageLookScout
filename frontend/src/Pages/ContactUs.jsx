@@ -1,8 +1,11 @@
 import { useState } from "react";
 import GetInTouchCategory from "../Component/GetInTouchCategory";
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 const ContactUs = () => {
+
+  const navigate =useNavigate()
 
  const [data,setData]=useState({
     firstName:"",
@@ -46,6 +49,7 @@ const handleOnChange = (e) => {
 
       if (responseData.success) {
         toast.success(responseData.message);
+        navigate('/')
       } else {
         toast.error(responseData.message);
       }
