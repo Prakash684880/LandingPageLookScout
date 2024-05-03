@@ -78,7 +78,7 @@ const handleOnChange = (e) => {
               id="firstName"
               value={data.firstName}
               name="firstName"
-              placeholder="Enter the Product name"
+              placeholder="Enter the First name"
               className="bg-slate-200 p-2 text-black"
               required
               onChange={handleOnChange}
