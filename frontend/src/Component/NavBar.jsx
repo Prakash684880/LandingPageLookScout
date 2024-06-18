@@ -32,7 +32,7 @@ const NavBar = () => {
           <Link to={"/"} className="flex items-center text-black ">
             <img src={logo} alt="logo_img" height={30} width={30} />
             <h1 className="md:text-xl font-extrabold hover:text-gray-500">
-              LOOKSCOUT
+              APEX Innovative
             </h1>
           </Link>
         </div>
