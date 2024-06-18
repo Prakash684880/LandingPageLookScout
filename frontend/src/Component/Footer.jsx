@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="flex flex-col lg:max-w-[250px]">
           <div className="font-bold py-3 text-2xl cursor-pointer flex font-[Poppins] w-[250px] md:text-xl sm:items-center text-gray-800">
             <img src={logo} alt="logo_img" height={30} width={30} />
-            <h1 className="md:text-xl font-extrabold hover:text-gray-500">LOOKSCOUT</h1>
+            <h1 className="md:text-xl font-extrabold hover:text-gray-500">APEX INNOVATIVE</h1>
           </div>
           <p className="text-base pb-4">
             Generate outside the box thinking with the possibility to target the
@@ -157,7 +157,7 @@ const Footer = () => {
       <div className="flex m-10 flex-col justify-center items-center ">
         <TbOctagon className="lg:text-4xl text-xl inverted-blue" />
         <p className="text-sm lg:text-xl font-semibold text-gray-600">
-          &copy; 2024. Lookscout. All Rights Reserved.
+          &copy; 2024. APEX INNOVATIVE. All Rights Reserved.
         </p>
       </div>
     </div>
